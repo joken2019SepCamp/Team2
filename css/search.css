@@ -12,6 +12,7 @@
     border-radius:25px;
     outline:0;
     background:#eee;
+    margin-top:8.5px;
     }
     #sbtn4{
     height:50px;
@@ -23,7 +24,7 @@
     color:#fff;
     border:none;
     border-radius:0 25px 25px 0;
-    margin-top:2.5px;
+    margin-top:10px;
     }
     #sbtn4 .fa-search{
     font-size:20px;	
