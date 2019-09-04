@@ -37,43 +37,59 @@ $result = $sth->fetch(PDO::FETCH_ASSOC);
 <link rel="stylesheet" href="css/search.css">
 <link rel="stylesheet" href="css/side.css">
 <link rel="stylesheet" href="css/font.css">
-<link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 <link rel="stylesheet" href="css/button.css">
 <link rel="stylesheet" href="css/button1.css">
 <link rel="stylesheet" href="css/textwaku.css">
 <link rel="stylesheet" href="css/midashi1.css">
-<link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet">
 <title>Hello,Jokenhub</title>
 </head>
 <body>
 <!--ヘッダあああ -->
 <div class="site-header">
-    <div class="site-logo">
-        <img src="img/logo.png">
+    <div class="site-logo">  
+<a href="main.html"><img src="img/logo.png"></a>
     </div>
     <form id="form4" action="自分のサイトURL" method="get">
             <input id="sbox4"  id="s" name="s" type="text" placeholder="これは便利なサイトです" />
             <button id="sbtn4" type="submit"><i class="fas fa-search"></i></button>
-    </form>
-    <br>
-    <div class="header-str">
-        新規登録
-    </div>
-    <div class="header-str2">
-        ログイン
-    </div>
+            </form><br>
+<div class="header-str">
+        <div class="wrap">
+            <a href="signup.html">
+                <div style="margin-right:150px">
+                <button class="button2">新規登録</button></a>
+                </div>
+        </div>
+</div>
+<div class="wrap">
+<a href="signin.html">
+    <div style="margin-right:50px">
+        <div style="margin-top:15px">
+        <button class="button2">ログイン</button></a>
+        </div>
+     </div>
+</div>
 </div>
 <!--ヘッダーおわり-->
 <!--サイドメニュー-->
 <div class="left">
-おなまえ<br>
-ステータス<br>
-ランキング<br>
+    <div class="font_side1">
+Jo Kentaro<br>
+</div>
+<div style="margin-left:5px">
+<img src="img/ava.png" width="100px" height="180px">
+</div>
+ステータス
+<div class="graph">
+        <div class="bar bar1">Level</div>
+        </div>
+ 
 </div>
 <!--サイドメニューおわり-->
 
 <div style="position:absolute; top:100px; left:250px">
-    <h1>
+    <h1><i class="fas fa-pencil-alt"></i>
         <p>投稿内容の確認<br></p>
     </h1>
     <h2>
