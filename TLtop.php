@@ -42,7 +42,8 @@ $result = $sth->fetch(PDO::FETCH_ASSOC);
 <link rel="stylesheet" href="css/button1.css">
 <link rel="stylesheet" href="css/textwaku.css">
 <link rel="stylesheet" href="css/midashi1.css">
-<title>Hello,Jokenhub</title>
+<link rel="stylesheet" href="css/anime.css">
+<title>投稿内容の確認</title>
 </head>
 <body>
 <!--ヘッダあああ -->
@@ -89,7 +90,7 @@ Jo Kentaro<br>
 <!--サイドメニューおわり-->
 
 <div style="position:absolute; top:100px; left:250px">
-    <h1><i class="fas fa-pencil-alt"></i>
+    <h1>
         <p>投稿内容の確認<br></p>
     </h1>
     <h2>
