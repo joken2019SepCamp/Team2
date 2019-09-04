@@ -41,6 +41,7 @@ $result = $sth->fetch(PDO::FETCH_ASSOC);
 <link rel="stylesheet" href="css/button.css">
 <link rel="stylesheet" href="css/button1.css">
 <link rel="stylesheet" href="css/textwaku.css">
+<link rel="stylesheet" href="css/midashi1.css">
 <title>Hello,Jokenhub</title>
 </head>
 <body>
@@ -71,9 +72,13 @@ $result = $sth->fetch(PDO::FETCH_ASSOC);
 <!--サイドメニューおわり-->
 
 <div style="position:absolute; top:100px; left:250px">
+    <h1>
+        <p>投稿内容の確認<br></p>
+    </h1>
     <h2>
         <?php
-            echo "投稿内容の確認<br>名前：".$result["name"]."<br>";
+            //echo "投稿内容の確認<br>";
+            echo "名前：".$result["name"]."<br>";
             echo "ジャンル：".$result["genre"]."<br>";
             echo "タグ：".$result["tag"]."<br>";
             echo "質問内容：".$result["contents"]."<br>";

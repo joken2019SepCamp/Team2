@@ -1,0 +1,19 @@
+h1 {
+  position: relative;
+  background: #ffcb9b;
+  padding: 0.25em 0.5em;
+  border-left: solid 2em #ff8e0e;
+}
+
+h1:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f303";
+  position: absolute;
+  padding: 0em;
+  color: white;
+  font-weight: normal;
+  left: -1.35em;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
