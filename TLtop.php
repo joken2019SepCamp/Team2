@@ -7,11 +7,6 @@ try {
 
     // 接続を使用する
     $sth = $dbh->query('SELECT * from posts');
-    echo "<pre>";
-    foreach($sth as $row) {
-        print_r($row);
-    }
-    echo "</pre>";
 
     // 接続を閉じる
     $sth = null;
@@ -26,7 +21,7 @@ $sql = 'select * from posts';
 $stmt = $dbh->query($sql);
 
 $result = $stmt->fetch(PDO::FETCH_ASSOC);
-var_dump($result);
+
 // print($result['id']);
 // print($result['name']);
 // print($result['genre']);
