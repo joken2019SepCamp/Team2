@@ -46,7 +46,6 @@
     echo "タグ：".$_POST["tag"]."<br>";
     echo "質問内容：".$_POST["coment"]."<br>";
     echo "追加ファイル：".$_POST["picture"];
-
 ?>
 
 
