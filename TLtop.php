@@ -106,20 +106,11 @@ Jo Kentaro<br>
 
 <div style="position:absolute; top:100px; left:250px">
     <h1>
-        <p>投稿内容の確認<br></p>
+        <p>投稿が完了しました。<br></p>
     </h1>
-    <div class="font_sign">
     <h2>
-        <?php
-            //echo "投稿内容の確認<br>";
-            echo "名前：".$result["name"]."<br>";
-            echo "ジャンル：".$result["genre"]."<br>";
-            echo "タグ：".$result["tag"]."<br>";
-            echo "質問内容：".$result["contents"]."<br>";
-            echo "追加ファイル：".$result["imgpath"];
-        ?>
+        <a href="TLsitumon1.php">投稿一覧ページに戻ります。</a>
     </h2>
-</div>
 </div>
 <script>
     $(function(){
