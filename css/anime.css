@@ -1,0 +1,31 @@
+.bar{
+  max-width: 600px;
+  width: 100%;
+  margin: 1em;
+  color: white;
+  padding: 0.25em;
+  animation: bar-animation 1 10s;
+  background: #0091EA;
+}
+
+.bar1{
+  max-width: 70%;
+}
+.bar2{
+  max-width: 30%;
+}
+.bar3{
+  max-width: 60%;
+}
+.bar4{
+  max-width: 50%;
+}
+
+@keyframes bar-animation{
+  0%{
+    width: 0px;
+  }
+  100%{
+    width: 100%;
+  }
+}
