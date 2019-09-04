@@ -58,19 +58,19 @@ var_dump($result);
 <!--ヘッダあああ -->
 <div class="site-header">
     <div class="site-logo">
-    <img src="img/logo.png">
+        <img src="img/logo.png">
     </div>
     <form id="form4" action="自分のサイトURL" method="get">
             <input id="sbox4"  id="s" name="s" type="text" placeholder="これは便利なサイトです" />
             <button id="sbtn4" type="submit"><i class="fas fa-search"></i></button>
-            </form><br>
-<div class="header-str">
-    新規登録
+    </form>
+    <br>
+    <div class="header-str">
+        新規登録
     </div>
-<div class="header-str2">
-    ログイン
-</div>
-     
+    <div class="header-str2">
+        ログイン
+    </div>
 </div>
 <!--ヘッダーおわり-->
 <!--サイドメニュー-->
