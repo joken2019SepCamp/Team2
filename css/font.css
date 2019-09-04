@@ -8,7 +8,7 @@
 
 .font_btn{
     font-size:20px;
-
+    text-shadow: #000 1px 1px 0;
     color:rgb(255, 255, 255);
     font-family: "Toppan Bunkyu Midashi Mincho","凸版文久見出し明朝";
 }
