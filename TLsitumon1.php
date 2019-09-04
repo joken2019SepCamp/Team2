@@ -75,15 +75,19 @@ Jo Kentaro<br>
     <h1>
         <p>投稿一覧<br></p>
     </h1>
+    <div class="textbox">
+        <div class="box_inner">
     <h2>
         <?php 
-            echo '名前:' . $name . '<br>';
-            echo 'ジャンル:' . $choice . '<br>';
-            echo 'タグ:' . $tag . '<br>';
-            echo '内容:' . $coment . '<br>';
-            echo '追加ファイル:' . $picture . '<br>';
+             echo '名前:' . $name . '<br>';
+             echo 'ジャンル:' . $choice . '<br>';
+             echo 'タグ:' . $tag . '<br>';
+             echo '内容:' . $coment . '<br>';
+             echo '追加ファイル:' . $picture . '<br>';
         ?>
     </h2>
+        </div>
+    </div>
 </div>
 <script>
     $(function(){
