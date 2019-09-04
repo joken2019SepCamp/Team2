@@ -77,11 +77,26 @@ Jo Kentaro<br>
     </h1>
     <h2>
         <?php 
-            echo '名前:' . $name . '<br>';
-            echo 'ジャンル:' . $choice . '<br>';
-            echo 'タグ:' . $tag . '<br>';
-            echo '内容:' . $coment . '<br>';
-            echo '追加ファイル:' . $picture . '<br>';
+            // SELECT文を変数に格納
+            $sql = "SELECT * FROM posts";
+ 
+            // SQLステートメントを実行し、結果を変数に格納
+            $sth = $dbh->query($sql);
+ 
+            // foreach文で配列の中身を一行ずつ出力
+            foreach ($sth as $row) {
+ 
+            // データベースのフィールド名で出力
+            echo '名前:'.$row['name'].'<br>'."内容:".$row['contents'];
+ 
+            // 改行を入れる
+            echo '<br>';
+            }
+            // echo '名前:' . $name . '<br>';
+            // echo 'ジャンル:' . $choice . '<br>';
+            // echo 'タグ:' . $tag . '<br>';
+            // echo '内容:' . $coment . '<br>';
+            // echo '追加ファイル:' . $picture . '<br>';
         ?>
     </h2>
 </div>
