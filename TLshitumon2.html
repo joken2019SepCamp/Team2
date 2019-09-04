@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/search.css">
+<link rel="stylesheet" href="css/side.css">
+<link rel="stylesheet" href="css/font.css">
+<link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet">
+<link rel="stylesheet" href="css/button.css">
+<title>Hello,Jokenhub</title>
+</head>
+<body>
+<!--ヘッダあああ -->
+<div class="site-header">
+    <div class="site-logo">
+    <img src="img/logo.png">
+    </div>
+    <form id="form4" action="自分のサイトURL" method="get">
+            <input id="sbox4"  id="s" name="s" type="text" placeholder="これは便利なサイトです" />
+            <button id="sbtn4" type="submit"><i class="fas fa-search"></i></button>
+            </form><br>
+<div class="header-str">
+    新規登録
+    </div>
+<div class="header-str2">
+    ログイン
+</div>
+     
+</div>
+<!--ヘッダーおわり-->
+<!--サイドメニュー-->
+<div class="left">
+おなまえ<br>
+ステータス<br>
+ランキング<br>
+</div>
+<!--サイドメニューおわり-->
+
+
+<form method="POST" action="TLtop.html">
+    <div style="position:absolute; top:100px; left:250px">
+        <h3>質問したいジャンル：
+        <select name="choice">
+            <option value="shiryo">授業資料pdfについて</option>
+            <option value="kougi">講義資料pdfについて</option>
+            <option value="jugyo">授業内容について</option>
+            <option value="lang">言語について</option>
+            <option value="work">技術的なこと</option>
+            <option value="other">上記以外について</option>
+        </select>
+    </div>
+    <div style="position:absolute; top:100px; left:700px">
+        <p><h3>タグ：<input type="text" name="tag"></p>
+    </div>
+    <div style="position:absolute; top:200px; left:240px">
+        <textarea name="naiyou" cols="110" rows="25">
+質問内容の入力</textarea>
+    </div>
+    <div style="position:absolute; top:555px; left:900px">
+        <p><input type="submit" value="送信" style="width:150px; height:70px;" class="btn-square-shadow"></p>
+    </div>
+    <div style="position:absolute; top:550px; left:250px">
+        <p><h3>画像を追加：<input type="file" name="picture"></p>
+    </div>
+</form>
+
+</body>
+
+</html>
+
