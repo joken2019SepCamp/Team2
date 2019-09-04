@@ -4,7 +4,8 @@ $name = $_POST['name'];
 $choice = $_POST['choice'];
 $tag = $_POST['tag'];
 $coment = $_POST['coment'];
-$picture = $_POST['picture'];
+$picture = "";
+//$picture = $_POST['picture'];
 
 // db access
 try {
@@ -12,7 +13,7 @@ try {
     $dbh = new PDO('mysql:host=localhost;dbname=tc2019', 'root', 'NupK8rqxlOrX');
 
     //$sql = 'INSERT INTO posts VALUES(' . $coment . ', ' . $name . ',' . $tag . ',' . $picture . ',' . $choice . ')';
-    $sql = "INSERT INTO posts VALUES($coment, $name, $tag, $picture, $choice)";
+    $sql = "INSERT INTO posts(contents, name, tag, imgpath, genre) VALUES($coment, $name, $tag, $picture, $choice)";
     //$sql = 'INSERT INTO posts VALUES ($coment,$name,$tag,$picture,$choice)';
 
     // 接続を使用する
