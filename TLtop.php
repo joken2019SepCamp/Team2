@@ -43,6 +43,9 @@ $result = $sth->fetch(PDO::FETCH_ASSOC);
 <link rel="stylesheet" href="css/textwaku.css">
 <link rel="stylesheet" href="css/midashi1.css">
 <link rel="stylesheet" href="css/anime.css">
+<link rel="stylesheet" href="http://jaysalvat.github.io/vegas/releases/latest/vegas.min.css">
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="http://jaysalvat.github.io/vegas/releases/latest/vegas.js"></script>
 <title>投稿内容の確認</title>
 </head>
 <body>
