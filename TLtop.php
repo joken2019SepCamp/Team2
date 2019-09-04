@@ -91,11 +91,12 @@ Jo Kentaro<br>
  
 </div>
 <!--サイドメニューおわり-->
-<div class="font_sign">
+
 <div style="position:absolute; top:100px; left:250px">
     <h1>
         <p>投稿内容の確認<br></p>
     </h1>
+    <div class="font_sign">
     <h2>
         <?php
             //echo "投稿内容の確認<br>";
