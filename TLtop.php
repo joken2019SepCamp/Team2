@@ -106,6 +106,7 @@ Jo Kentaro<br>
     <h1>
         <p>投稿内容の確認<br></p>
     </h1>
+    <div class="font_sign">
     <h2>
         <?php
             //echo "投稿内容の確認<br>";
@@ -117,9 +118,20 @@ Jo Kentaro<br>
         ?>
     </h2>
 </div>
-
-
-
+</div>
+<script>
+    $(function(){
+        $('#example, body').vegas({
+          slides: [
+            { src: 'img/bg2_1.jpg' },
+          ],
+          delay: 4000,
+          timer: false,
+          firstTransition: 'fade2',
+          overlay: 'https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.0/overlays/01.png',
+        });
+      });
+      </script>
 </body>
 
 </html>
