@@ -1,37 +1,20 @@
-#form4{
-    position:relative;
-    max-width:300px;	
-    margin-bottom:20px;
-    }
-    #sbox4{
-    height:47px;
-    padding:0 100px; 
-    position:absolute; 
-    left:0;
-    top:1.5px;
-    border-radius:25px;
-    outline:0;
-    background:#eee;
-    margin-top:8.5px;
-    }
-    #sbtn4{
-    height:51px;
-    width:50px;	
-    position:absolute; 
-    left:318px; 
-    top:0;
-    background:#7fbfff;
-    color:#fff;
-    border:none;
-    border-radius:0 25px 25px 0;
-    margin-top:10px;
-    }
-    #sbtn4 .fa-search{
-    font-size:20px;	
-    position:absolute;
-    top:30%;
-    left:30%;	
-    }
-    #sbtn4:hover{
-    color:#888;
-    }
+body{
+    height:100%;
+    margin: 0;
+}
+
+
+.left{
+    margin-top:70px;
+    position:fixed;
+    width:220px;
+    height:720px;
+    background-color:rgb(214, 214, 214);
+    text-align:center;
+}
+
+.main_content{
+    position:fixed;
+    margin-top:70px;
+    margin-left:250px;
+}
