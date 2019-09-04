@@ -71,13 +71,15 @@ $result = $sth->fetch(PDO::FETCH_ASSOC);
 <!--サイドメニューおわり-->
 
 <div style="position:absolute; top:100px; left:250px">
-    <?php
-        echo "投稿内容の確認<br>  名前：".$result["name"];
-        echo "  ジャンル：".$result["genre"];
-        echo "  タグ：".$result["tag"];
-        echo "  質問内容：".$result["contents"]."<br>";
-        echo "  追加ファイル：".$result["imgpath"];
-    ?>
+    <h2>
+        <?php
+            echo "投稿内容の確認<br>名前：".$result["name"];
+            echo "<br>ジャンル：".$result["genre"];
+            echo "<br>タグ：".$result["tag"];
+            echo "<br>質問内容：".$result["contents"]."<br>";
+            echo "<br>追加ファイル：".$result["imgpath"];
+        ?>
+    </h2>
 </div>
 
 
