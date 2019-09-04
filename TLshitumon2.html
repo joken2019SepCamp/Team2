@@ -40,14 +40,24 @@
         <div class="font_side1">
     Jo Kentaro<br>
     </div>
-    <div style="margin-left:5px">
-    <img src="img/ava.png" width="100px" height="180px">
-    </div>
+    <script>
+    function ChangeImage( imgid , newimg ) {
+        document.getElementById(imgid).src = newimg;
+     }
+     </script>
+     <img src="img/ava.png" id="Orange" width="130" height="220" alt="初期アバターのばしょ">
+    <p>
+        <input type="button" value="初期アバター(男)" onclick="document.getElementById('Orange').src = 'img/ava.png';">
+        <input type="button" value="初期アバター(女)" onclick="document.getElementById('Orange').src = 'img/ava2.png';">
+        <input type="button" value=" Avatar(¥10000)  " onclick="document.getElementById('Orange').src = 'img/ava3.png';">
+    <br>
+    </p>
     ステータス
     <div class="graph">
-            <div class="bar bar1">Level</div>
+            <div class="bar bar1">Level334 80%</div>
             </div>
-     
+            実績一覧<br>
+            <i class="fas fa-medal"></i>HTML完全に理解した<br>
     </div>
     <!--サイドメニューおわり-->
 <div class="font_sign">
