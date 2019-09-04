@@ -1,4 +1,5 @@
 <?php
+/*
 try {
     // MySQLへの接続
    $dbh = new PDO('mysql:host=localhost;dbname=tc2019', 'root', 'NupK8rqxlOrX'); 
@@ -8,7 +9,7 @@ try {
     print "エラー!: " . $e->getMessage() . "<br/gt;";
     die();
 }
-
+*/
 ?>
 
 <!DOCTYPE html>
@@ -80,8 +81,18 @@ Jo Kentaro<br>
     </h1>
     <h2>
         <?php 
+        try {
+            // MySQLへの接続
+           $dbh = new PDO('mysql:host=localhost;dbname=tc2019', 'root', 'NupK8rqxlOrX'); 
+           $dbh ->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $dbh ->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+        } catch (PDOException $e) { // PDOExceptionをキャッチする
+            print "エラー!: " . $e->getMessage() . "<br/gt;";
+            die();
+        }
+
         try{
-            $sql = 'serect * from tc2019.posts' ;
+            $sql = 'SELECT * FROM tc2019.posts' ;
             $sth = $dbh -> prepare($sql);
             $sth ->execute();
         } catch (PDOException $e) { // PDOExceptionをキャッチする
