@@ -1,3 +1,30 @@
+<?php
+
+// db access
+try {
+    // MySQLへの接続
+    $dbh = new PDO('mysql:host=3.112.172.184;dbname=tc2019', 'root', 'NupK8rqxlOrX');
+
+    // 接続を使用する
+    $sth = $dbh->query('SELECT * from posts');
+    echo "<pre>";
+    foreach($sth as $row) {
+        print_r($row);
+    }
+    echo "</pre>";
+
+    // 接続を閉じる
+    $sth = null;
+    $dbh = null;
+
+} catch (PDOException $e) { // PDOExceptionをキャッチする
+    print "エラー!: " . $e->getMessage() . "<br/gt;";
+    die();
+}
+?>
+
+
+
 
 <!DOCTYPE html>
 <html>
