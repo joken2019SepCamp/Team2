@@ -105,10 +105,10 @@ Jo Kentaro<br>
         while($row = $sth -> fetch(PDO::FETCH_ASSOC)){
         
               echo '名前:' . $row[name] . '<br>';
-            //  echo 'ジャンル:' . $choice . '<br>';
-            //  echo 'タグ:' . $tag . '<br>';
-            //  echo '内容:' . $coment . '<br>';
-            //  echo '追加ファイル:' . $picture . '<br>';
+              echo 'ジャンル:' . $row[genre] . '<br>';
+              echo 'タグ:' . $row[tag] . '<br>';
+              echo '内容:' . $row[contents] . '<br>';
+              echo '追加ファイル:' . $row[imgpath] . '<br><br>';
         }
         
         ?>
