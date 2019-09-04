@@ -1,126 +1,37 @@
-html, body{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
-  }
-  
-  a{
-    text-decoration: none;
-  }
-  
-  /* GRID */
-  
-  .twelve { width: 100%; }
-  .eleven { width: 91.53%; }
-  .ten { width: 83.06%; }
-  .nine { width: 74.6%; }
-  .eight { width: 66.13%; }
-  .seven { width: 57.66%; }
-  .six { width: 49.2%; }
-  .five { width: 40.73%; }
-  .four { width: 32.26%; }
-  .three { width: 23.8%; }
-  .two { width: 15.33%; }
-  .one { width: 6.866%; }
-  
-  /* COLUMNS */
-  
-  .col {
-      display: block;
-      float:left;
-      margin: 1% 0 1% 1.6%;
-  }
-  
-  .col:first-of-type {
-    margin-left: 0;
-  }
-  
-  .container{
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    position: relative;
-    text-align: center;
-  }
-  
-  /* CLEARFIX */
-  
-  .cf:before,
-  .cf:after {
-      content: " ";
-      display: table;
-  }
-  
-  .cf:after {
-      clear: both;
-  }
-  
-  .cf {
-      *zoom: 1;
-  }
-  
-  /* ALL BUTTONS */
-  
-  .button{
-    display: inline-block;
-    padding: 20px 50px;
-    margin: 20px 0;
-    position: relative;
-    color: #ecf0f1;
-  }
-  
-  /* BUTTON 1 */
-  
-  #button-1{
-    border: 2px solid #585858;
-    color: #ffffff;
-    overflow: hidden;
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  #button-1:before{
-    content: "";
-    z-index: -1;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: -100%;
-    background-color: #f0a709;
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  #button-1:hover{
-    color: #ecf0f1;
-  }
-  
-  #button-1:hover:before{
-    left: 0;
-  }
-  
-  /* BUTTON 2 */
-  
- 
-=======
-.btn-square-shadow {
-    display: inline-block;
-    padding: 0.5em 1em;
-    text-decoration: none;
-    background: #668ad8;/*ボタン色*/
-    color: #FFF;
-    border-bottom: solid 4px #627295;
-    border-radius: 3px;
-  }
-  .btn-square-shadow:active {
-    /*ボタンを押したとき*/
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px);/*下に動く*/
-    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
-    border-bottom: none;
-  }
+#form4{
+    position:relative;
+    max-width:300px;	
+    margin-bottom:20px;
+    }
+    #sbox4{
+    height:45px;
+    padding:0 100px; 
+    position:absolute; 
+    left:0;
+    top:1.5px;
+    border-radius:25px;
+    outline:0;
+    background:#eee;
+    margin-top:8.5px;
+    }
+    #sbtn4{
+    height:51px;
+    width:50px;	
+    position:absolute; 
+    left:318px; 
+    top:0;
+    background:#7fbfff;
+    color:#fff;
+    border:none;
+    border-radius:0 25px 25px 0;
+    margin-top:10px;
+    }
+    #sbtn4 .fa-search{
+    font-size:20px;	
+    position:absolute;
+    top:30%;
+    left:30%;	
+    }
+    #sbtn4:hover{
+    color:#888;
+    }
