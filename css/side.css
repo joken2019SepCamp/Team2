@@ -14,5 +14,8 @@ body{
 }
 
 .main_content{
-    float:left;
+    position:fixed;
+    margin-top:70px;
+    margin-left:250px;
 }
+
