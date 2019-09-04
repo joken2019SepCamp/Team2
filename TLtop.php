@@ -1,13 +1,23 @@
 <?php
 
+$name = $_POST['name'];
+$choice = $_POST['choice'];
+$tag = $_POST['tag'];
+$coment = $_POST['coment'];
+$picture = $_POST['picture'];
+
 // db access
 try {
     // MySQLへの接続
     $dbh = new PDO('mysql:host=localhost;dbname=tc2019', 'root', 'NupK8rqxlOrX');
 
-    // 接続を使用する
-    $sth = $dbh->query('SELECT * from posts');
+    //$sql = 'INSERT INTO posts VALUES(' . $coment . ', ' . $name . ',' . $tag . ',' . $picture . ',' . $choice . ')';
+    $sql = "INSERT INTO posts VALUES($coment, $name, $tag, $picture, $choice)";
+    //$sql = 'INSERT INTO posts VALUES ($coment,$name,$tag,$picture,$choice)';
 
+    // 接続を使用する
+    $sth = $dbh->query($sql);
+    // INSERT INTO posts VALUES ($coment,$name,$tag,$picture,$choice);
 
 } catch (PDOException $e) { // PDOExceptionをキャッチする
     print "エラー!: " . $e->getMessage() . "<br/gt;";
