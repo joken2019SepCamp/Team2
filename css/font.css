@@ -1,0 +1,14 @@
+.font_head{
+    font-size:70px;
+   margin-left:200px;
+   margin-top:100px;
+    color:rgb(255, 255, 255);
+    font-family: "Toppan Bunkyu Midashi Mincho","凸版文久見出し明朝";
+}
+
+.font_btn{
+    font-size:20px;
+
+    color:rgb(255, 255, 255);
+    font-family: "Toppan Bunkyu Midashi Mincho","凸版文久見出し明朝";
+}
