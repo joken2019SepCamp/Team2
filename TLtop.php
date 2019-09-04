@@ -22,6 +22,19 @@ try {
     die();
 }
 
+$sql = 'select * from posts';
+$stmt = $dbh->query($sql);
+
+$result = $stmt->fetch(PDO::FETCH_ASSOC);
+var_dump($result);
+// print($result['id']);
+// print($result['name']);
+// print($result['genre']);
+// print($result['tag']);
+// print($result['coment']);
+// print($result['picture']);
+
+
 ?>
 
 
@@ -69,11 +82,11 @@ try {
 <!--サイドメニューおわり-->
 
 <?php
-    echo "投稿内容の確認<br>名前：".$_POST["name"];
-    echo "ジャンル：".$_POST["genre"];
-    echo "タグ：".$_POST["tag"]."<br>";
-    echo "質問内容：".$_POST["coment"]."<br>";
-    echo "追加ファイル：".$_POST["picture"];
+    echo "投稿内容の確認<br>名前：".$result["name"];
+    echo "ジャンル：".$result["genre"];
+    echo "タグ：".$result["tag"];
+    echo "質問内容：".$result["contents"]."<br>";
+    echo "追加ファイル：".$result["imgpath"];
 ?>
 
 
