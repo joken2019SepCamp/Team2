@@ -1,0 +1,5 @@
+input[type="text"]:focus,
+texture:focus {
+    box-shadow: 0 0 7px #ffa500;
+    border: 1px solid #ffa500;
+}
