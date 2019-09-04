@@ -11,6 +11,9 @@
 <link rel="stylesheet" href="css/button.css">
 <link rel="stylesheet" href="css/button1.css">
 <link rel="stylesheet" href="css/textwaku.css">
+<link rel="stylesheet" href="http://jaysalvat.github.io/vegas/releases/latest/vegas.min.css">
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="http://jaysalvat.github.io/vegas/releases/latest/vegas.js"></script>
 <title>Hello,Jokenhub</title>
 </head>
 <body>
@@ -47,8 +50,7 @@
      
     </div>
     <!--サイドメニューおわり-->
-
-
+<div class="font_sign">
 <form method="POST" action="TLtop.php">
     <div style="position:absolute; top:100px; left:250px">
         <h1>質問投稿フォーム</h1>
@@ -73,14 +75,27 @@
         <textarea name="coment" cols="110" rows="25">
 質問内容の入力</textarea>
     </div>
-    <div style="position:absolute; top:555px; left:900px">
+    <div style="position:absolute; top:555px; left:600px">
         <p><input type="submit" value="送信" style="width:150px; height:70px;" class="btn-square-shadow"></p>
     </div>
-    <div style="position:absolute; top:550px; left:250px">
+    <div style="position:absolute; top:550px; left:0px">
         <p><h3>ファイル追加：<input type="file" name="picture"></h3></p>
     </div>
+    </div>
 </form>
-
+<script>
+    $(function(){
+        $('#example, body').vegas({
+          slides: [
+            { src: 'img/bg2_1.jpg' },
+          ],
+          delay: 4000,
+          timer: false,
+          firstTransition: 'fade2',
+          overlay: 'https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.0/overlays/01.png',
+        });
+      });
+      </script>
 </body>
 
 </html>
