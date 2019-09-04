@@ -8,17 +8,11 @@ try {
     // 接続を使用する
     $sth = $dbh->query('SELECT * from posts');
 
-    // 接続を閉じる
-    $sth = null;
-    $dbh = null;
 
 } catch (PDOException $e) { // PDOExceptionをキャッチする
     print "エラー!: " . $e->getMessage() . "<br/gt;";
     die();
 }
-
-$sql = 'select * from posts';
-$stmt = $dbh->query($sql);
 
 $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
