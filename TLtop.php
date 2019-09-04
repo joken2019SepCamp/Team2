@@ -91,7 +91,7 @@ Jo Kentaro<br>
  
 </div>
 <!--サイドメニューおわり-->
-
+<div class="font_sign">
 <div style="position:absolute; top:100px; left:250px">
     <h1>
         <p>投稿内容の確認<br></p>
@@ -107,9 +107,20 @@ Jo Kentaro<br>
         ?>
     </h2>
 </div>
-
-
-
+</div>
+<script>
+    $(function(){
+        $('#example, body').vegas({
+          slides: [
+            { src: 'img/bg2_1.jpg' },
+          ],
+          delay: 4000,
+          timer: false,
+          firstTransition: 'fade2',
+          overlay: 'https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.0/overlays/01.png',
+        });
+      });
+      </script>
 </body>
 
 </html>
