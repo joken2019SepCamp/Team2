@@ -4,9 +4,10 @@ $name = $_POST['name'];
 $choice = $_POST['choice'];
 $tag = $_POST['tag'];
 $coment = $_POST['coment'];
-$picture = "";
+$picture = './upload/' . $_FILES ['picture'] ['name'];
 //$picture = $_POST['picture'];
-
+$file = 'upload/' . basename ( $_FILES ['picture'] ['name'] );
+move_uploaded_file ( $_FILES ['picture'] ['tmp_name'], $file );
 // db access
 try {
     // MySQLへの接続

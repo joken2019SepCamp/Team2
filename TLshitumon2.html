@@ -52,7 +52,7 @@
     <!--サイドメニューおわり-->
 <div class="font_sign">
 <form method="POST" action="TLtop.php">
-    <div style="position:absolute; top:100px; left:250px">
+    <div style="position:absolute; top:100px; left:250px" enctype="multipart/form-data">
         <h1>質問投稿フォーム</h1>
     <div style="position:absolute; top:80px; left:0px">
         <p><h3>名前：<input type="text" name="name"></h3></p>
@@ -79,7 +79,7 @@
         <p><input type="submit" value="送信" style="width:150px; height:70px;" class="btn-square-shadow"></p>
     </div>
     <div style="position:absolute; top:550px; left:0px">
-        <!--<p><h3>ファイル追加：<input type="file" name="picture"></h3></p>-->
+        <p><h3>ファイル追加：<input type="file" name="picture"></h3></p>
     </div>
 </form>
 <script>
