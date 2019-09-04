@@ -42,6 +42,7 @@ $result = $sth->fetch(PDO::FETCH_ASSOC);
 <link rel="stylesheet" href="css/button1.css">
 <link rel="stylesheet" href="css/textwaku.css">
 <link rel="stylesheet" href="css/midashi1.css">
+<link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet">
 <title>Hello,Jokenhub</title>
 </head>
 <body>
