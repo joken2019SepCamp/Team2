@@ -41,11 +41,11 @@
 <!--サイドメニューおわり-->
 
 <?php
-    echo "投稿内容の確認<br>名前：".$_POST["name"] .;
-    echo "ジャンル：".$_POST["genre"] .;
-    echo "タグ：".$_POST["tag"] ."<br>";
-    echo "質問内容：".$_POST["coment"] ."<br>";
-    echo "追加ファイル：".$_POST["picture"] .;
+    echo "投稿内容の確認<br>名前：".$_POST["name"];
+    echo "ジャンル：".$_POST["genre"];
+    echo "タグ：".$_POST["tag"]."<br>";
+    echo "質問内容：".$_POST["coment"]."<br>";
+    echo "追加ファイル：".$_POST["picture"];
 ?>
 
 
