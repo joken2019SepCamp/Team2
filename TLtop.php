@@ -14,7 +14,7 @@ try {
     die();
 }
 
-$result = $stmt->fetch(PDO::FETCH_ASSOC);
+$result = $sth->fetch(PDO::FETCH_ASSOC);
 
 // print($result['id']);
 // print($result['name']);
