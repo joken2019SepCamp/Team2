@@ -3,7 +3,7 @@
 // db access
 try {
     // MySQLへの接続
-    $dbh = new PDO('mysql:host=3.112.172.184;dbname=tc2019', 'root', 'NupK8rqxlOrX');
+    $dbh = new PDO('mysql:host=localhost;dbname=tc2019', 'root', 'NupK8rqxlOrX');
 
     // 接続を使用する
     $sth = $dbh->query('SELECT * from posts');
@@ -21,6 +21,7 @@ try {
     print "エラー!: " . $e->getMessage() . "<br/gt;";
     die();
 }
+
 ?>
 
 
