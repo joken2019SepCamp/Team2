@@ -61,31 +61,33 @@ $result = $sth->fetch(PDO::FETCH_ASSOC);
 <title>投稿内容の確認</title>
 </head>
 <body>
-<!--サイドメニュー-->
-<div class="left">
-    <div class="font_side1">
-Jo Kentaro<br>
-</div>
-<script>
-function ChangeImage( imgid , newimg ) {
-    document.getElementById(imgid).src = newimg;
- }
- </script>
- <img src="img/ava.png" id="Orange" width="130" height="220" alt="初期アバターのばしょ">
-<p>
-	<input type="button" value="初期アバター(男)" onclick="document.getElementById('Orange').src = 'img/ava.png';">
-	<input type="button" value="初期アバター(女)" onclick="document.getElementById('Orange').src = 'img/ava2.png';">
-	<input type="button" value=" Avatar(¥10000)  " onclick="document.getElementById('Orange').src = 'img/ava3.png';">
-<br>
-</p>
-ステータス
-<div class="graph">
-        <div class="bar bar1">Level334 80%</div>
+<!--ヘッダあああ -->
+<div class="site-header">
+    <div class="site-logo">  
+<a href="main.html"><img src="img/logo.png"></a>
+    </div>
+    <form id="form4" action="自分のサイトURL" method="get">
+            <input id="sbox4"  id="s" name="s" type="text" placeholder="これは便利なサイトです" />
+            <button id="sbtn4" type="submit"><i class="fas fa-search"></i></button>
+            </form><br>
+<div class="header-str">
+        <div class="wrap">
+            <a href="signup.html">
+                <div style="margin-right:150px">
+                <button class="button2">新規登録</button></a>
+                </div>
         </div>
-        実績一覧<br>
-        <i class="fas fa-medal"></i>HTML完全に理解した<br>
 </div>
-<!--サイドメニューおわり-->
+<div class="wrap">
+<a href="signin.html">
+    <div style="margin-right:50px">
+        <div style="margin-top:15px">
+        <button class="button2">ログイン</button>
+        </div>
+    </div>
+</a>
+</div>
+<!--ヘッダーおわり-->
 <!--サイドメニュー-->
 <div class="left">
     <div class="font_side1">
