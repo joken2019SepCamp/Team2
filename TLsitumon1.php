@@ -104,7 +104,7 @@ function ChangeImage( imgid , newimg ) {
         }
 
         try{
-            $sql = 'SELECT * FROM tc2019.posts ORDER BY empno DESC;';
+            $sql = 'SELECT * FROM tc2019.posts ORDER BY id DESC';
             //$sql = 'SELECT * FROM tc2019.posts' ;
             $sth = $dbh -> prepare($sql);
             $sth ->execute();
