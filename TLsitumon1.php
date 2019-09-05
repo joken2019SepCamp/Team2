@@ -84,7 +84,7 @@ function ChangeImage( imgid , newimg ) {
         <i class="fas fa-medal"></i>HTML完全に理解した<br>
 </div>
 <!--サイドメニューおわり-->
-<button class="fixed_btn">質問する！</button>
+<a href="TLshitumon2.html" class="fixed_btn">質問する！</a>
 <div style="position:absolute; top:100px; left:250px">
     <h1>
         <p>投稿一覧<br></p>
