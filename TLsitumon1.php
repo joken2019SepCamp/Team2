@@ -121,6 +121,7 @@ function ChangeImage( imgid , newimg ) {
               echo '内容:' . $row[contents] . '<br>';
               echo '追加ファイル:' . $row[imgpath] . '<br><br>';
         }
+    
         ?>
     </h2>
         </div>
