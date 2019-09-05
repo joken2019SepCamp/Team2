@@ -1,11 +1,15 @@
 <?php
-
-$name = $_POST['name'];
-$choice = $_POST['choice'];
-$tag = $_POST['tag'];
-$coment = $_POST['coment'];
-$picture = './upload/' . $_FILES ['picture'] ['name'];
-
+/*
+try {
+    // MySQLへの接続
+   $dbh = new PDO('mysql:host=localhost;dbname=tc2019', 'root', 'NupK8rqxlOrX'); 
+   $dbh ->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $dbh ->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+} catch (PDOException $e) { // PDOExceptionをキャッチする
+    print "エラー!: " . $e->getMessage() . "<br/gt;";
+    die();
+}
+*/
 ?>
 
 <!DOCTYPE html>
@@ -79,11 +83,33 @@ Jo Kentaro<br>
         <div class="box_inner">
     <h2>
         <?php 
-             echo '名前:' . $name . '<br>';
-             echo 'ジャンル:' . $choice . '<br>';
-             echo 'タグ:' . $tag . '<br>';
-             echo '内容:' . $coment . '<br>';
-             echo '追加ファイル:' . $picture . '<br>';
+        try {
+            // MySQLへの接続
+           $dbh = new PDO('mysql:host=localhost;dbname=tc2019', 'root', 'NupK8rqxlOrX'); 
+           $dbh ->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $dbh ->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+        } catch (PDOException $e) { // PDOExceptionをキャッチする
+            print "エラー!: " . $e->getMessage() . "<br/gt;";
+            die();
+        }
+
+        try{
+            $sql = 'SELECT * FROM tc2019.posts' ;
+            $sth = $dbh -> prepare($sql);
+            $sth ->execute();
+        } catch (PDOException $e) { // PDOExceptionをキャッチする
+            print "エラー!: " . $e->getMessage() . "<br/gt;";
+            die();
+        }
+
+        while($row = $sth -> fetch(PDO::FETCH_ASSOC)){
+        
+              echo '名前:' . $row[name] . '<br>';
+              echo 'ジャンル:' . $row[genre] . '<br>';
+              echo 'タグ:' . $row[tag] . '<br>';
+              echo '内容:' . $row[contents] . '<br>';
+              echo '追加ファイル:' . $row[imgpath] . '<br><br>';
+        }
         ?>
     </h2>
         </div>
