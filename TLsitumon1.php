@@ -72,8 +72,8 @@ function ChangeImage( imgid , newimg ) {
  <img src="img/ava.png" id="Orange" width="130" height="220" alt="初期アバターのばしょ">
 <p>
 	<input type="button" value="初期アバター(男)" onclick="document.getElementById('Orange').src = 'img/ava.png';">
-	<input type="button" value="初期アバター(女)" onclick="document.getElementById('Orange').src = 'img/ava2.PNG';">
-	<input type="button" value=" Avatar(¥10000)  " onclick="document.getElementById('Orange').src = 'img/ava3.PNG';">
+	<input type="button" value="初期アバター(女)" onclick="document.getElementById('Orange').src = 'img/ava2.png';">
+	<input type="button" value=" Avatar(¥10000)  " onclick="document.getElementById('Orange').src = 'img/ava3.png';">
 <br>
 </p>
 ステータス
