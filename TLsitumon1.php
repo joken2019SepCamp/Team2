@@ -92,7 +92,8 @@ Jo Kentaro<br>
         }
 
         try{
-            $sql = 'SELECT * FROM tc2019.posts' ;
+            $sql = 'SELECT * FROM tc2019.posts ORDER BY empno ASC';
+            //$sql = 'SELECT * FROM tc2019.posts' ;
             $sth = $dbh -> prepare($sql);
             $sth ->execute();
         } catch (PDOException $e) { // PDOExceptionをキャッチする
