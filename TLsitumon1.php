@@ -74,7 +74,7 @@ Jo Kentaro<br>
  
 </div>
 <!--サイドメニューおわり-->
-
+<button class="fixed_btn">質問する！</button>
 <div style="position:absolute; top:100px; left:250px">
     <h1>
         <p>投稿一覧<br></p>
